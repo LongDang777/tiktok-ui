@@ -8,9 +8,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleXmark, faMagnifyingGlass, faSpinner } from '@fortawesome/free-solid-svg-icons'
 
 import Tippy from '@tippyjs/react';
-import { Wrapper as PopperWrapper } from '../../Popper'
-import AccountItem from '../AccountItem'
-import Button from '../../Button'
+import { Wrapper as PopperWrapper } from '~/components/Popper'
+import AccountItem from '~/components/AccountItem'
+import Button from '~/components/Button'
+
+
+
+
+
 
 const cx = classNames.bind(styles)
 
