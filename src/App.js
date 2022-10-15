@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { DefaultLayout } from './components/Layouts';
 import { publicRoutes } from './routes';
 
-
 export default function App() {
   return (
     <Router>

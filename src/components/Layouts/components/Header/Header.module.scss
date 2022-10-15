@@ -13,6 +13,7 @@
 .inner {
   height: 100%;
   width: var(--default-layout-width);
+  padding: 0 var(--default-layout-horizontal-spacer);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -82,7 +83,7 @@
   position: relative;
   width: var(--search-button-width);
   height: 100%;
-  
+
   border-radius: 0 var(--search-border-radius) var(--search-border-radius) 0;
   font-size: 1.8rem;
   color: rgba(22, 24, 35, 0.34);
@@ -108,11 +109,30 @@
     color: rgba(22, 24, 35, 0.75);
   }
 }
-
+//Action
+.actions {
+  display: flex;
+  align-items: center;
+}
 .more-btn {
   font-size: 2rem;
   margin-left: 20px;
   padding: 4px 8px;
   cursor: pointer;
   background-color: transparent;
+}
+.action-btn {
+  font-size: 2.2rem;
+  color: #161823;
+  background-color: transparent;
+  padding: 4px 12px;
+  cursor: pointer;
+}
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 12px;
+  cursor: pointer;
 }
