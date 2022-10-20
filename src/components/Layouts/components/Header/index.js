@@ -5,7 +5,7 @@ import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faEllipsisVertical } from '@fortawesome/free-solid-svg-icons';
+import { faEllipsisVertical } from '@fortawesome/free-solid-svg-icons';
 
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
@@ -14,9 +14,10 @@ import Button from '~/components/Button';
 import Menu from '~/components/Popper/Menu';
 
 import Image from '~/components/Image';
-import { InboxIcon, MessageIcon,  UploadIcon } from '~/components/Icons';
+import { InboxIcon, MessageIcon, UploadIcon } from '~/components/Icons';
 import Search from './Search';
 import { Link } from 'react-router-dom';
+import routesConfig from '~/config/routes';
 
 const cx = classNames.bind(styles);
 
@@ -53,7 +54,7 @@ const MENU_ITEMS = [
 
 export default function Header() {
     const currentUser = true;
-    
+
     //Handle logic
     const handleMenuChange = (menuItem) => {
         switch (menuItem.type) {
@@ -98,11 +99,11 @@ export default function Header() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <Link to={'/'} className={cx('logo')}>
+                <Link to={routesConfig.home} className={cx('logo-link')}>
                     <img src={images.logo} alt="Tiktok" />
                 </Link>
 
-                <Search/>
+                <Search />
 
                 <div className={cx('actions')}>
                     {currentUser ? (
@@ -114,7 +115,7 @@ export default function Header() {
                             </Tippy>
                             <Tippy delay={[0, 50]} content="Upload video" placement="bottom">
                                 <button className={cx('action-btn')}>
-                                    <MessageIcon/>
+                                    <MessageIcon />
                                 </button>
                             </Tippy>
                             <Tippy delay={[0, 50]} content="Inbox" placement="bottom">
