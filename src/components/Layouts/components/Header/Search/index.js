@@ -55,11 +55,11 @@ const Search = () => {
         if (!searchValue.startsWith(' ')) {
             setSearchValue(searchValue);
         }
+        
     };
 
- 
-
     return (
+        //sing a wrapper <div> tag around the reference element solves this by creating a new parentNode context.
         <div>
             <HeadlessTippy
                 interactive
@@ -91,14 +91,14 @@ const Search = () => {
                             <ClearIcon />
                         </button>
                     )}
-
+    
                     {loading && (
                         <button className={cx('loading')}>
                             <i className="bx bx-loader-alt"></i>
                         </button>
                     )}
-
-                    <button className={cx('search-btn')} onMouseDown={e=> e.preventDefault()}>
+    
+                    <button className={cx('search-btn')} onMouseDown={(e) => e.preventDefault()}>
                         <SearchIcon />
                     </button>
                 </div>
