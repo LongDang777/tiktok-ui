@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/deploy-github/static/css/main.cf9826eb.css",
+    "main.js": "/deploy-github/static/js/main.1db26e7c.js",
+    "static/js/787.fe00223f.chunk.js": "/deploy-github/static/js/787.fe00223f.chunk.js",
+    "static/media/boxicons.svg": "/deploy-github/static/media/boxicons.c17adb11d64fadd1cd5a.svg",
+    "static/media/boxicons.eot": "/deploy-github/static/media/boxicons.092b78589f3f53e60030.eot",
+    "static/media/boxicons.woff": "/deploy-github/static/media/boxicons.0f4528cf3c75a4b361c0.woff",
+    "static/media/boxicons.ttf": "/deploy-github/static/media/boxicons.cbd149c55e2396cb52e7.ttf",
+    "static/media/boxicons.woff2": "/deploy-github/static/media/boxicons.8d765747a5588f36ff61.woff2",
+    "static/media/ProximaNova-Semibold.woff2": "/deploy-github/static/media/ProximaNova-Semibold.db7972dbe0b808f96bae.woff2",
+    "static/media/userImage.jpg": "/deploy-github/static/media/userImage.0058327058a8ce90f815.jpg",
+    "static/media/sofiapro-bold.woff2": "/deploy-github/static/media/sofiapro-bold.1d7186488612ac20891f.woff2",
+    "static/media/Proxima-Nova-Bold.woff2": "/deploy-github/static/media/Proxima-Nova-Bold.8dd475cbc90552d85f91.woff2",
+    "static/media/Proxima-Nova-Regular.woff2": "/deploy-github/static/media/Proxima-Nova-Regular.6c83037ae28747e6d774.woff2",
+    "static/media/logo.svg": "/deploy-github/static/media/logo.05523bd9a50e3c6c9f2bb6a905216f6b.svg",
+    "index.html": "/deploy-github/index.html",
+    "main.cf9826eb.css.map": "/deploy-github/static/css/main.cf9826eb.css.map",
+    "main.1db26e7c.js.map": "/deploy-github/static/js/main.1db26e7c.js.map",
+    "787.fe00223f.chunk.js.map": "/deploy-github/static/js/787.fe00223f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf9826eb.css",
+    "static/js/main.1db26e7c.js"
+  ]
+}
