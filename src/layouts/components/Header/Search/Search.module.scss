@@ -10,13 +10,13 @@
   background-color: rgba(22, 24, 35, 0.06);
   border-radius: 92px;
   border: 1.5px solid transparent;
-
   transition: all 0.2s;
 
   input {
     flex: 1;
     height: 100%;
     padding-left: 16px;
+    padding-right: 40px;
     color: var(--black);
     font-size: 1.6rem;
     font-family: var(--font-family);
