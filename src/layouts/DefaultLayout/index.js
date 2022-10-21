@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import classNames from 'classnames/bind'
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
@@ -19,4 +20,7 @@ export default function DefaultLayout({ children }) {
       </div>
     </div>
   )
+}
+DefaultLayout.prototype = {
+  children : PropTypes.node.isRequired
 }

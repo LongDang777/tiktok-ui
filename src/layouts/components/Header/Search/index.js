@@ -8,7 +8,7 @@ import { Wrapper as PopperWrapper } from '~/components/Popper';
 import { ClearIcon, SearchIcon } from '~/components/Icons';
 import classNames from 'classnames/bind';
 import styles from './Search.module.scss';
-import * as searchServices from '~/apiServices/searchService';
+import * as searchServices from '~/services/searchService';
 
 const cx = classNames.bind(styles);
 

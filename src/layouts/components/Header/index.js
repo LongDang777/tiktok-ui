@@ -14,10 +14,12 @@ import Button from '~/components/Button';
 import Menu from '~/components/Popper/Menu';
 
 import Image from '~/components/Image';
+import userImage from '~/assets/images/userImage.jpg'
+
 import { InboxIcon, MessageIcon, UploadIcon } from '~/components/Icons';
 import Search from './Search';
 import { Link } from 'react-router-dom';
-import routesConfig from '~/config/routes';
+import config from '~/config';
 
 const cx = classNames.bind(styles);
 
@@ -99,10 +101,10 @@ export default function Header() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <Link to={routesConfig.home} className={cx('logo-link')}>
+                <Link to={config.routes.home} className={cx('logo-link')}>
                     <img src={images.logo} alt="Tiktok" />
                 </Link>
-
+                
                 <Search />
 
                 <div className={cx('actions')}>
@@ -135,7 +137,7 @@ export default function Header() {
                         {currentUser ? (
                             <Image
                                 className={cx('user-avatar')}
-                                src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/c0207b829201c4560499d0ff710ba08c~c5_100x100.jpeg?x-expires=1665972000&x-signature=Y1mBYw5PsmozoaxgclbSoAM0dcg%3D"
+                                src={userImage}
                                 alt="Account-user"
                                 fallBack="https://fullstack.edu.vn/static/media/f8-icon.18cd71cfcfa33566a22b.png"
                             />
